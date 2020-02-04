@@ -1,10 +1,19 @@
-import React from 'react';
-import { movies } from '../data';
+import React from "react";
+import { movies } from "../data";
+
+
+function renderMovies(){
+  return movies.forEach(movie=> {
+    <div>{movie.title}</div>
+    <div>{movie.time}</div>
+    
+  })
+}
 
 const Movies = () => {
   return (
     <div>
-        {/*{code here}*/}
+      <h1>Movies Page</h1>
     </div>
   );
 };
